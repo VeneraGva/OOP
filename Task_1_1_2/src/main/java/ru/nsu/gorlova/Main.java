@@ -14,6 +14,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        new Game(scanner).start();
+        Game game = new Game(scanner);
+        game.start();
     }
 }

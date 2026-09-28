@@ -1,12 +1,12 @@
 package ru.nsu.gorlova.cards;
 
-import ru.nsu.gorlova.cards.card.Card;
-import ru.nsu.gorlova.cards.card.Rank;
-import ru.nsu.gorlova.cards.card.Suit;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import ru.nsu.gorlova.cards.card.Card;
+import ru.nsu.gorlova.cards.card.Rank;
+import ru.nsu.gorlova.cards.card.Suit;
 
 /**
  * Колода игральных карт.
@@ -47,8 +47,8 @@ public class Deck {
 
     /**
      * Достаёт верхнюю карту из колоды.
-     * <p>
-     * Если колода пуста — заполняет и перемешивает заново.
+     *
+     * <p>Если колода пуста — заполняет и перемешивает заново.
      *
      * @return верхняя карта
      */

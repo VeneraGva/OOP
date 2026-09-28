@@ -1,9 +1,9 @@
 package ru.nsu.gorlova.cards;
 
-import ru.nsu.gorlova.cards.card.Card;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import ru.nsu.gorlova.cards.card.Card;
 
 /**
  * Рука игрока или дилера.

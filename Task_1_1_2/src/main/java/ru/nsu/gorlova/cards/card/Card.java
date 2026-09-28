@@ -64,8 +64,10 @@ public class Card {
     @Override
     public String toString() {
         if (rank.usesNounForm()) {
-            return rank.getName() + " " + rank.suitForm(suit) + " (" + rank.getValue() + ")";
+            return rank.getName() + " " + rank.suitForm(suit) +
+                    " (" + rank.getValue() + ")";
         }
-        return rank.suitForm(suit) + " " + rank.getName() + " (" + rank.getValue() + ")";
+        return rank.suitForm(suit) + " " + rank.getName() +
+                " (" + rank.getValue() + ")";
     }
 }

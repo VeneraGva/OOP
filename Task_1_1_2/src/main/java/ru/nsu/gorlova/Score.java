@@ -5,8 +5,19 @@ package ru.nsu.gorlova;
  */
 public class Score {
 
+    /**
+     * Номер текущего раунда.
+     */
     private int roundNumber;
+
+    /**
+     * Количество побед игрока.
+     */
     private int playerWins;
+
+    /**
+     * Количество побед дилера.
+     */
     private int dealerWins;
 
     /**
@@ -30,14 +41,29 @@ public class Score {
         dealerWins++;
     }
 
+    /**
+     * Возвращает номер текущего раунда.
+     *
+     * @return номер раунда
+     */
     public int getRoundNumber() {
         return roundNumber;
     }
 
+    /**
+     * Возвращает количество побед игрока.
+     *
+     * @return победы игрока
+     */
     public int getPlayerWins() {
         return playerWins;
     }
 
+    /**
+     * Возвращает количество побед дилера.
+     *
+     * @return победы дилера
+     */
     public int getDealerWins() {
         return dealerWins;
     }

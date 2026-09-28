@@ -1,22 +1,41 @@
 package ru.nsu.gorlova;
 
+import java.util.Scanner;
+
 import ru.nsu.gorlova.cards.Deck;
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.player.Dealer;
 import ru.nsu.gorlova.player.HumanPlayer;
 import ru.nsu.gorlova.player.Player;
 
-import java.util.Scanner;
-
 /**
  * Игра «Консольный блэкджек».
  */
 public class Game {
 
+    /**
+     * Колода карт.
+     */
     private final Deck deck;
+
+    /**
+     * Игрок.
+     */
     private final Player player;
+
+    /**
+     * Дилер.
+     */
     private final Dealer dealer;
+
+    /**
+     * Сканер для чтения ввода.
+     */
     private final Scanner scanner;
+
+    /**
+     * Счёт игры.
+     */
     private final Score score;
 
     /**
@@ -42,13 +61,17 @@ public class Game {
             score.nextRound();
             playRound();
 
-            System.out.print("Хотите сыграть ещё? Введите 1, если да, и не 1 в противном случае. ");
+            System.out.print("Хотите сыграть ещё? "
+                    + "Введите 1, если да, и 0, если нет. ");
         } while (!scanner.nextLine().trim().equals("0"));
 
         System.out.println("Игра окончена. Счёт "
                 + score.getPlayerWins() + ":" + score.getDealerWins());
     }
 
+    /**
+     * Играет один раунд.
+     */
     private void playRound() {
         System.out.println("Раунд " + score.getRoundNumber());
 
@@ -93,7 +116,8 @@ public class Game {
         System.out.println("-------");
 
         dealer.revealCard();
-        System.out.println("Дилер открывает закрытую карту " + dealer.getHiddenCard());
+        System.out.println("Дилер открывает закрытую карту "
+                + dealer.getHiddenCard());
         System.out.println("Ваши карты: " + player.getHand());
         System.out.println("Карты дилера: " + dealer.getHand());
 
@@ -108,6 +132,9 @@ public class Game {
         determineWinner();
     }
 
+    /**
+     * Определяет победителя раунда.
+     */
     private void determineWinner() {
         int playerScore = player.getHand().getScore();
         int dealerScore = dealer.getHand().getScore();
@@ -128,6 +155,9 @@ public class Game {
         printScore();
     }
 
+    /**
+     * Печатает текущий счёт.
+     */
     private void printScore() {
         System.out.println("Счёт " + score.getPlayerWins() + ":"
                 + score.getDealerWins() + ".");

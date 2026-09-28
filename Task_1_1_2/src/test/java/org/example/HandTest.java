@@ -20,45 +20,42 @@ class HandTest {
     @Test
     void testSimpleScore() {
         Hand hand = new Hand();
-        hand.addCard(new Card(Suit.SPADES, Rank.QUEEN));    // 10
-        hand.addCard(new Card(Suit.HEARTS, Rank.THREE));    // 3
+        hand.addCard(new Card(Suit.SPADES, Rank.QUEEN));
+        hand.addCard(new Card(Suit.HEARTS, Rank.THREE));
         assertEquals(13, hand.getScore());
     }
 
     @Test
     void testAceAsEleven() {
         Hand hand = new Hand();
-        hand.addCard(new Card(Suit.SPADES, Rank.ACE));      // 11
-        hand.addCard(new Card(Suit.HEARTS, Rank.NINE));     // 9
+        hand.addCard(new Card(Suit.SPADES, Rank.ACE));
+        hand.addCard(new Card(Suit.HEARTS, Rank.NINE));
         assertEquals(20, hand.getScore());
     }
 
     @Test
     void testAceAsOne() {
         Hand hand = new Hand();
-        hand.addCard(new Card(Suit.SPADES, Rank.ACE));      // 11 → 1
-        hand.addCard(new Card(Suit.HEARTS, Rank.NINE));     // 9
-        hand.addCard(new Card(Suit.CLUBS, Rank.FIVE));      // 5
-        // 11 + 9 + 5 = 25 → понижаем туз → 1 + 9 + 5 = 15
+        hand.addCard(new Card(Suit.SPADES, Rank.ACE));
+        hand.addCard(new Card(Suit.HEARTS, Rank.NINE));
+        hand.addCard(new Card(Suit.CLUBS, Rank.FIVE));
         assertEquals(15, hand.getScore());
     }
 
     @Test
     void testTwoAces() {
         Hand hand = new Hand();
-        hand.addCard(new Card(Suit.SPADES, Rank.ACE));      // 11
-        hand.addCard(new Card(Suit.HEARTS, Rank.ACE));      // 11
-        // 11 + 11 = 22 → понижаем один → 11 + 1 = 12
+        hand.addCard(new Card(Suit.SPADES, Rank.ACE));
+        hand.addCard(new Card(Suit.HEARTS, Rank.ACE));
         assertEquals(12, hand.getScore());
     }
 
     @Test
     void testTwoAcesWithNine() {
         Hand hand = new Hand();
-        hand.addCard(new Card(Suit.SPADES, Rank.ACE));      // 11
-        hand.addCard(new Card(Suit.HEARTS, Rank.ACE));      // 11 → 1
-        hand.addCard(new Card(Suit.CLUBS, Rank.NINE));      // 9
-        // 11 + 11 + 9 = 31 → понижаем один → 11 + 1 + 9 = 21
+        hand.addCard(new Card(Suit.SPADES, Rank.ACE));
+        hand.addCard(new Card(Suit.HEARTS, Rank.ACE));
+        hand.addCard(new Card(Suit.CLUBS, Rank.NINE));
         assertEquals(21, hand.getScore());
     }
 
@@ -76,7 +73,6 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, Rank.SEVEN));
         hand.addCard(new Card(Suit.HEARTS, Rank.SEVEN));
         hand.addCard(new Card(Suit.CLUBS, Rank.SEVEN));
-        // 21, но не на двух картах
         assertFalse(hand.isBlackjack());
     }
 
@@ -86,8 +82,7 @@ class HandTest {
         hand.addCard(new Card(Suit.SPADES, Rank.KING));
         hand.addCard(new Card(Suit.HEARTS, Rank.QUEEN));
         hand.addCard(new Card(Suit.CLUBS, Rank.TWO));
-        // 22 > 21
-        assertTrue(hand.lose());
+        assertTrue(hand.isBusted());
     }
 
     @Test
@@ -95,8 +90,7 @@ class HandTest {
         Hand hand = new Hand();
         hand.addCard(new Card(Suit.SPADES, Rank.KING));
         hand.addCard(new Card(Suit.HEARTS, Rank.QUEEN));
-        // 20
-        assertFalse(hand.lose());
+        assertFalse(hand.isBusted());
     }
 
     @Test

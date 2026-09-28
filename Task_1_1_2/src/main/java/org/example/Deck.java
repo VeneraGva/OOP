@@ -3,11 +3,13 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 /**
  * Колода игральных карт.
  */
 public class Deck {
     private final List<Card> cards;
+
     /**
      * Создание, заполнение и перемешивание колоды.
      */
@@ -16,6 +18,7 @@ public class Deck {
         refill();
         shuffle();
     }
+
     /**
      * Заполнение колоды.
      */
@@ -26,12 +29,14 @@ public class Deck {
             }
         }
     }
+
     /**
      * Перемешивание колоды.
      */
     public void shuffle() {
         Collections.shuffle(cards);
     }
+
     /**
      * Достает последнюю карту из колоды, и если колода пуста, то заводит новую.
      */
@@ -42,12 +47,14 @@ public class Deck {
         }
         return cards.remove(cards.size() - 1);
     }
+
     /**
      * Размер колоды.
      */
     public int size() {
         return cards.size();
     }
+
     /**
      * Проверяет пуста ли колода.
      */

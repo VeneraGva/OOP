@@ -2,23 +2,27 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Рука игрока или дилера.
  */
 public class Hand {
     private final List<Card> cards;
+
     /**
      * Создает пустую руку.
      */
     public Hand() {
         this.cards = new ArrayList<>();
     }
+
     /**
      * Кладет карту в руку.
      */
     public void addCard(Card card) {
         cards.add(card);
     }
+
     /**
      * Считает сумму очков в руке.
      */
@@ -37,24 +41,28 @@ public class Hand {
         }
         return score;
     }
+
     /**
      * Блэкджек.
      */
     public boolean isBlackjack() {
         return cards.size() == 2 && getScore() == 21;
     }
+
     /**
      * Проигрыш.
      */
     public boolean lose() {
         return getScore() > 21;
     }
+
     /**
      * Возвращает карты на руках.
      */
     public List<Card> getCards() {
         return new ArrayList<>(cards);
     }
+
     /**
      * Возвращает строку с картами на руках.
      */
@@ -62,6 +70,7 @@ public class Hand {
     public String toString() {
         return cards + " > " + getScore();
     }
+
     /**
      * Очищает руку.
      */

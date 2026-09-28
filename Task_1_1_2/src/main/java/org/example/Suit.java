@@ -1,4 +1,5 @@
 package org.example;
+
 /**
  * Масть карты.
  */
@@ -17,18 +18,21 @@ public enum Suit {
         this.feminine = feminine;
         this.masculine = masculine;
     }
+
     /**
      * Возвращает название масти в виде существительного.
      */
     public String getNoun() {
         return noun;
     }
+
     /**
      * Возвращает название масти в виде прилагательного в женском роде.
      */
     public String getFeminine() {
         return feminine;
     }
+
     /**
      * Возвращает название масти в виде прилагательного в мужском роде.
      */

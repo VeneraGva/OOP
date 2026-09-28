@@ -1,4 +1,5 @@
 package org.example;
+
 /**
  * Игральная карта.
  */
@@ -10,30 +11,35 @@ public class Card {
         this.suit = suit;
         this.rank = rank;
     }
+
     /**
      * Возвращает масть карты.
      */
     public Suit suit() {
         return suit;
     }
+
     /**
      * Возвращает ранг карты.
      */
     public Rank rank() {
         return rank;
     }
+
     /**
      * Возвращает значение ранга карты.
      */
     public int value() {
         return rank.getValue();
     }
+
     /**
      * Проверяет является ли карта тузом.
      */
     public boolean isAce() {
         return rank.isAce();
     }
+
     /**
      * Возвращает все название карты.
      */

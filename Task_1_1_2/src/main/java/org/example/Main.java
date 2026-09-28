@@ -11,7 +11,7 @@ public class Main {
     private static Dealer dealer;
     private static Scanner scanner;
     /**
-     *  Количество побед игрока.
+     * Количество побед игрока.
      */
     private static int playerWins;
     /**
@@ -19,9 +19,10 @@ public class Main {
      */
     private static int dealerWins;
     /**
-     *  Номер текущего раунда.
+     * Номер текущего раунда.
      */
     private static int roundNumber;
+
     /**
      * Запускает игру.
      */

@@ -1,4 +1,4 @@
-package org.example;
+package ru.nsu.gorlova.cards.card;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

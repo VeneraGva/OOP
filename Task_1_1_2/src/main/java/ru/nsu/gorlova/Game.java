@@ -1,80 +1,56 @@
-package org.example;
+package ru.nsu.gorlova;
+
+import ru.nsu.gorlova.cards.Deck;
+import ru.nsu.gorlova.cards.card.Card;
+import ru.nsu.gorlova.player.Dealer;
+import ru.nsu.gorlova.player.HumanPlayer;
+import ru.nsu.gorlova.player.Player;
 
 import java.util.Scanner;
 
 /**
- * Консольный Блэкджек.
+ * Игра «Консольный блэкджек».
  */
-public class Main {
+public class Game {
+
+    private final Deck deck;
+    private final Player player;
+    private final Dealer dealer;
+    private final Scanner scanner;
+    private final Score score;
 
     /**
-     * Колода карт.
-     */
-    private static Deck deck;
-
-    /**
-     * Игрок.
-     */
-    private static Player player;
-
-    /**
-     * Дилер.
-     */
-    private static Dealer dealer;
-
-    /**
-     * Сканер для чтения ввода.
-     */
-    private static Scanner scanner;
-
-    /**
-     * Количество побед игрока.
-     */
-    private static int playerWins;
-
-    /**
-     * Количество побед дилера.
-     */
-    private static int dealerWins;
-
-    /**
-     * Номер текущего раунда.
-     */
-    private static int roundNumber;
-
-    /**
-     * Запускает игру.
+     * Создаёт новую игру.
      *
-     * @param args аргументы командной строки (не используются)
+     * @param scanner сканер для чтения ввода
      */
-    public static void main(String[] args) {
-        deck = new Deck();
-        player = new HumanPlayer();
-        dealer = new Dealer();
-        scanner = new Scanner(System.in);
-        playerWins = 0;
-        dealerWins = 0;
-        roundNumber = 0;
-
-        System.out.println("Добро пожаловать в Блэкджек!");
-
-        while (true) {
-            roundNumber++;
-            playRound();
-            System.out.print("Хотите сыграть ещё? Введите 1, если да, и 0, если нет. ");
-            if (scanner.nextInt() == 0) {
-                break;
-            }
-        }
-
-        System.out.println("Игра окончена. Счёт " + playerWins + ":" + dealerWins);
+    public Game(Scanner scanner) {
+        this.deck = new Deck();
+        this.player = new HumanPlayer();
+        this.dealer = new Dealer();
+        this.scanner = scanner;
+        this.score = new Score();
     }
 
     /**
-     * Играет один раунд.
+     * Запускает игру.
      */
-    private static void playRound() {
-        System.out.println("Раунд " + roundNumber);
+    public void start() {
+        System.out.println("Добро пожаловать в Блэкджек!");
+
+        do {
+            score.nextRound();
+            playRound();
+
+            System.out.print("Хотите сыграть ещё? Введите 1, если да, и не 1 в противном случае. ");
+        } while (!scanner.nextLine().trim().equals("0"));
+
+        System.out.println("Игра окончена. Счёт "
+                + score.getPlayerWins() + ":" + score.getDealerWins());
+    }
+
+    private void playRound() {
+        System.out.println("Раунд " + score.getRoundNumber());
 
         player.getHand().clear();
         dealer.getHand().clear();
@@ -91,7 +67,7 @@ public class Main {
 
         if (player.getHand().isBlackjack()) {
             System.out.println("Блэкджек! Вы выиграли раунд!");
-            playerWins++;
+            score.playerWins();
             printScore();
             return;
         }
@@ -107,7 +83,7 @@ public class Main {
 
             if (player.getHand().isBusted()) {
                 System.out.println("Перебор! Вы проиграли раунд.");
-                dealerWins++;
+                score.dealerWins();
                 printScore();
                 return;
             }
@@ -132,22 +108,19 @@ public class Main {
         determineWinner();
     }
 
-    /**
-     * Определяет победителя раунда.
-     */
-    private static void determineWinner() {
+    private void determineWinner() {
         int playerScore = player.getHand().getScore();
         int dealerScore = dealer.getHand().getScore();
 
         if (dealer.getHand().isBusted()) {
             System.out.println("У дилера перебор! Вы выиграли раунд!");
-            playerWins++;
+            score.playerWins();
         } else if (playerScore > dealerScore) {
             System.out.println("Вы выиграли раунд!");
-            playerWins++;
+            score.playerWins();
         } else if (playerScore < dealerScore) {
             System.out.println("Дилер выиграл раунд.");
-            dealerWins++;
+            score.dealerWins();
         } else {
             System.out.println("Ничья!");
         }
@@ -155,10 +128,8 @@ public class Main {
         printScore();
     }
 
-    /**
-     * Печатает текущий счёт.
-     */
-    private static void printScore() {
-        System.out.println("Счёт " + playerWins + ":" + dealerWins + " в вашу пользу.");
+    private void printScore() {
+        System.out.println("Счёт " + score.getPlayerWins() + ":"
+                + score.getDealerWins() + ".");
     }
 }

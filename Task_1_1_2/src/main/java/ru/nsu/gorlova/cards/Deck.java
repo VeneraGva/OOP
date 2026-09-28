@@ -1,4 +1,8 @@
-package org.example;
+package ru.nsu.gorlova.cards;
+
+import ru.nsu.gorlova.cards.card.Card;
+import ru.nsu.gorlova.cards.card.Rank;
+import ru.nsu.gorlova.cards.card.Suit;
 
 import java.util.ArrayList;
 import java.util.Collections;

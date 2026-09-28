@@ -1,4 +1,6 @@
-package org.example;
+package ru.nsu.gorlova.player;
+
+import ru.nsu.gorlova.cards.card.Card;
 
 /**
  * Дилер — участник игры, управляемый приложением.

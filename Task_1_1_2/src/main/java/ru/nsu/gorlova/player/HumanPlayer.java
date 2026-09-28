@@ -1,4 +1,4 @@
-package org.example;
+package ru.nsu.gorlova.player;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class HumanPlayer extends Player {
      */
     @Override
     public boolean wantsToHit() {
-        System.out.print("Введите \"1\", чтобы взять карту, и \"0\", чтобы остановиться. ");
-        return scanner.nextInt() == 1;
+        System.out.print("Введите \"1\", чтобы взять карту, если не \"1\", то мы останавливаемся. ");
+        return scanner.nextLine().trim().equals("1");
     }
 }

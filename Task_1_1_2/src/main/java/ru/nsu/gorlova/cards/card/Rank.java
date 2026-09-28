@@ -1,4 +1,4 @@
-package org.example;
+package ru.nsu.gorlova.cards.card;
 
 /**
  * Ранг карты.

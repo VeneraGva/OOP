@@ -7,17 +7,23 @@ import java.util.List;
  * Рука игрока или дилера.
  */
 public class Hand {
+
+    /**
+     * Карты в руке.
+     */
     private final List<Card> cards;
 
     /**
-     * Создает пустую руку.
+     * Создаёт пустую руку.
      */
     public Hand() {
         this.cards = new ArrayList<>();
     }
 
     /**
-     * Кладет карту в руку.
+     * Кладёт карту в руку.
+     *
+     * @param card карта для добавления
      */
     public void addCard(Card card) {
         cards.add(card);
@@ -25,6 +31,8 @@ public class Hand {
 
     /**
      * Считает сумму очков в руке.
+     *
+     * @return сумма очков
      */
     public int getScore() {
         int score = 0;
@@ -43,28 +51,36 @@ public class Hand {
     }
 
     /**
-     * Блэкджек.
+     * Проверяет, является ли рука блэкджеком.
+     *
+     * @return {@code true}, если блэкджек
      */
     public boolean isBlackjack() {
         return cards.size() == 2 && getScore() == 21;
     }
 
     /**
-     * Проигрыш.
+     * Проверяет, превысила ли сумма 21.
+     *
+     * @return {@code true}, если перебор
      */
-    public boolean lose() {
+    public boolean isBusted() {
         return getScore() > 21;
     }
 
     /**
-     * Возвращает карты на руках.
+     * Возвращает копию списка карт.
+     *
+     * @return список карт
      */
     public List<Card> getCards() {
         return new ArrayList<>(cards);
     }
 
     /**
-     * Возвращает строку с картами на руках.
+     * Возвращает строковое представление руки.
+     *
+     * @return строка с картами и суммой
      */
     @Override
     public String toString() {

@@ -4,17 +4,23 @@ package org.example;
  * Участник игры.
  */
 public abstract class Player {
+
+    /**
+     * Рука участника.
+     */
     private final Hand hand;
 
     /**
-     * Создание руки участника игры.
+     * Создаёт участника с пустой рукой.
      */
-    public Player() {
+    protected Player() {
         this.hand = new Hand();
     }
 
     /**
      * Возвращает руку участника.
+     *
+     * @return рука
      */
     public Hand getHand() {
         return hand;
@@ -22,6 +28,8 @@ public abstract class Player {
 
     /**
      * Хочет ли участник взять ещё одну карту.
+     *
+     * @return {@code true}, если хочет взять карту
      */
     public abstract boolean wantsToHit();
 }

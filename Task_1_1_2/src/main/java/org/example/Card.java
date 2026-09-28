@@ -4,9 +4,17 @@ package org.example;
  * Игральная карта.
  */
 public class Card {
+
     private final Suit suit;
+
     private final Rank rank;
 
+    /**
+     * Создаёт карту с заданной мастью и рангом.
+     *
+     * @param suit масть карты
+     * @param rank ранг карты
+     */
     public Card(Suit suit, Rank rank) {
         this.suit = suit;
         this.rank = rank;
@@ -14,6 +22,8 @@ public class Card {
 
     /**
      * Возвращает масть карты.
+     *
+     * @return масть
      */
     public Suit suit() {
         return suit;
@@ -21,6 +31,8 @@ public class Card {
 
     /**
      * Возвращает ранг карты.
+     *
+     * @return ранг
      */
     public Rank rank() {
         return rank;
@@ -28,20 +40,26 @@ public class Card {
 
     /**
      * Возвращает значение ранга карты.
+     *
+     * @return значение
      */
     public int value() {
         return rank.getValue();
     }
 
     /**
-     * Проверяет является ли карта тузом.
+     * Проверяет, является ли карта тузом.
+     *
+     * @return {@code true}, если туз
      */
     public boolean isAce() {
         return rank.isAce();
     }
 
     /**
-     * Возвращает все название карты.
+     * Возвращает название карты.
+     *
+     * @return название карты
      */
     @Override
     public String toString() {

@@ -4,13 +4,14 @@ package org.example;
  * Дилер — участник игры, управляемый приложением.
  */
 public class Dealer extends Player {
+
     /**
      * Скрыта ли закрытая карта.
      */
     private boolean hiddenCard;
 
     /**
-     * Скрывается карта при создании Дилера.
+     * Создаёт дилера со скрытой закрытой картой.
      */
     public Dealer() {
         this.hiddenCard = true;
@@ -18,6 +19,8 @@ public class Dealer extends Player {
 
     /**
      * Хочет ли дилер взять ещё карту.
+     *
+     * @return {@code true}, если сумма руки меньше 17
      */
     @Override
     public boolean wantsToHit() {
@@ -32,14 +35,16 @@ public class Dealer extends Player {
     }
 
     /**
-     * Закрывает закрытую карту.
+     * Скрывает закрытую карту.
      */
-    public void HiddenCard() {
+    public void hideCard() {
         this.hiddenCard = true;
     }
 
     /**
      * Возвращает закрытую карту (вторую в руке).
+     *
+     * @return закрытая карта
      */
     public Card getHiddenCard() {
         return getHand().getCards().get(1);
@@ -47,6 +52,8 @@ public class Dealer extends Player {
 
     /**
      * Возвращает строковое представление руки дилера.
+     *
+     * @return рука дилера для вывода
      */
     public String handToString() {
         if (!hiddenCard) {

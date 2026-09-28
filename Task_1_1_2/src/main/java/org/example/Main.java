@@ -6,18 +6,37 @@ import java.util.Scanner;
  * Консольный Блэкджек.
  */
 public class Main {
+
+    /**
+     * Колода карт.
+     */
     private static Deck deck;
+
+    /**
+     * Игрок.
+     */
     private static Player player;
+
+    /**
+     * Дилер.
+     */
     private static Dealer dealer;
+
+    /**
+     * Сканер для чтения ввода.
+     */
     private static Scanner scanner;
+
     /**
      * Количество побед игрока.
      */
     private static int playerWins;
+
     /**
      * Количество побед дилера.
      */
     private static int dealerWins;
+
     /**
      * Номер текущего раунда.
      */
@@ -25,6 +44,8 @@ public class Main {
 
     /**
      * Запускает игру.
+     *
+     * @param args аргументы командной строки (не используются)
      */
     public static void main(String[] args) {
         deck = new Deck();
@@ -57,7 +78,7 @@ public class Main {
 
         player.getHand().clear();
         dealer.getHand().clear();
-        dealer.HiddenCard();
+        dealer.hideCard();
 
         player.getHand().addCard(deck.drawCard());
         dealer.getHand().addCard(deck.drawCard());
@@ -84,7 +105,7 @@ public class Main {
             System.out.println("Вы открыли карту " + card);
             System.out.println("Ваши карты: " + player.getHand());
 
-            if (player.getHand().lose()) {
+            if (player.getHand().isBusted()) {
                 System.out.println("Перебор! Вы проиграли раунд.");
                 dealerWins++;
                 printScore();
@@ -111,11 +132,14 @@ public class Main {
         determineWinner();
     }
 
+    /**
+     * Определяет победителя раунда.
+     */
     private static void determineWinner() {
         int playerScore = player.getHand().getScore();
         int dealerScore = dealer.getHand().getScore();
 
-        if (dealer.getHand().lose()) {
+        if (dealer.getHand().isBusted()) {
             System.out.println("У дилера перебор! Вы выиграли раунд!");
             playerWins++;
         } else if (playerScore > dealerScore) {
@@ -131,6 +155,9 @@ public class Main {
         printScore();
     }
 
+    /**
+     * Печатает текущий счёт.
+     */
     private static void printScore() {
         System.out.println("Счёт " + playerWins + ":" + dealerWins + " в вашу пользу.");
     }

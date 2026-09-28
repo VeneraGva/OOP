@@ -8,10 +8,14 @@ import java.util.List;
  * Колода игральных карт.
  */
 public class Deck {
+
+    /**
+     * Карты в колоде.
+     */
     private final List<Card> cards;
 
     /**
-     * Создание, заполнение и перемешивание колоды.
+     * Создаёт, заполняет и перемешивает колоду.
      */
     public Deck() {
         this.cards = new ArrayList<>();
@@ -20,7 +24,7 @@ public class Deck {
     }
 
     /**
-     * Заполнение колоды.
+     * Заполняет колоду всеми 52 картами.
      */
     private void refill() {
         for (Suit suit : Suit.values()) {
@@ -31,14 +35,18 @@ public class Deck {
     }
 
     /**
-     * Перемешивание колоды.
+     * Перемешивает колоду.
      */
     public void shuffle() {
         Collections.shuffle(cards);
     }
 
     /**
-     * Достает последнюю карту из колоды, и если колода пуста, то заводит новую.
+     * Достаёт верхнюю карту из колоды.
+     * <p>
+     * Если колода пуста — заполняет и перемешивает заново.
+     *
+     * @return верхняя карта
      */
     public Card drawCard() {
         if (cards.isEmpty()) {
@@ -49,14 +57,18 @@ public class Deck {
     }
 
     /**
-     * Размер колоды.
+     * Возвращает количество карт в колоде.
+     *
+     * @return размер колоды
      */
     public int size() {
         return cards.size();
     }
 
     /**
-     * Проверяет пуста ли колода.
+     * Проверяет, пуста ли колода.
+     *
+     * @return {@code true}, если колода пуста
      */
     public boolean isEmpty() {
         return cards.isEmpty();

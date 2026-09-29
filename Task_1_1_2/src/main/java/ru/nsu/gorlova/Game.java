@@ -1,7 +1,6 @@
 package ru.nsu.gorlova;
 
 import java.util.Scanner;
-
 import ru.nsu.gorlova.cards.Deck;
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.player.Dealer;

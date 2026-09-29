@@ -3,7 +3,6 @@ package ru.nsu.gorlova.cards;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.cards.card.Rank;
 import ru.nsu.gorlova.cards.card.Suit;

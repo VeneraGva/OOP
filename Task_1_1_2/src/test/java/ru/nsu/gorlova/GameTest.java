@@ -1,15 +1,14 @@
 package ru.nsu.gorlova;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Test;
 import ru.nsu.gorlova.cards.Hand;
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.cards.card.Rank;
 import ru.nsu.gorlova.cards.card.Suit;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Тесты игровых ситуаций: определение победителя по рукам.

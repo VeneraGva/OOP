@@ -6,29 +6,17 @@ package ru.nsu.gorlova.cards.card;
 public enum Rank {
 
     TWO("Двойка", 2),
-
     THREE("Тройка", 3),
-
     FOUR("Четвёрка", 4),
-
     FIVE("Пятёрка", 5),
-
     SIX("Шестёрка", 6),
-
     SEVEN("Семёрка", 7),
-
     EIGHT("Восьмёрка", 8),
-
     NINE("Девятка", 9),
-
     TEN("Десятка", 10),
-
     JACK("Валет", 10),
-
     QUEEN("дама", 10),
-
     KING("король", 10),
-
     ACE("Туз", 11);
 
     /**

@@ -2,7 +2,6 @@ package ru.nsu.gorlova.cards;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import ru.nsu.gorlova.cards.card.Card;
 
 /**

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0461941-2f1a-4893-8a81-e5c556f2e8fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/BinOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/StringParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Div.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Mul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Sub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/NumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/StringParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/VariableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/AddTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/DivTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/MulTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/SubTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/copy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1/main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/main.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3KEMBKISJoplZBcbMbBOmewiYR1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.AddTest.executor": "Run",
+    "Gradle.AddTest.testPrintNumberAndVariable.executor": "Run",
+    "Gradle.DivTest.executor": "Run",
+    "Gradle.MainTest.executor": "Run",
+    "Gradle.MulTest.executor": "Run",
+    "Gradle.NumberTest.executor": "Run",
+    "Gradle.StringParserTest.executor": "Run",
+    "Gradle.SubTest.executor": "Run",
+    "Gradle.Task_1_1_3 [:ru.nsu.gorlova.Main.main()].executor": "Run",
+    "Gradle.VariableTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "task-1-1-2",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/vener/Documents/secondcurs/OOP/Task_1_1_3/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.gorlova.Main" />
+      <module name="Task_1_1_3.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.gorlova.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.nsu.gorlova.MainTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="NumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.nsu.gorlova.expression.NumberTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="StringParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.nsu.gorlova.expression.StringParserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VariableTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.nsu.gorlova.expression.VariableTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.VariableTest" />
+        <item itemvalue="Gradle.StringParserTest" />
+        <item itemvalue="Gradle.NumberTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0461941-2f1a-4893-8a81-e5c556f2e8fd" name="Changes" comment="" />
+      <created>1791118140988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791118140988</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/Main.java</url>
+          <line>8</line>
+          <properties class="ru.nsu.gorlova.Main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

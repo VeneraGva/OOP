@@ -1,80 +1,38 @@
-package ru.nsu.gorlova;
-
-import java.util.Scanner;
+package ru.nsu.gorlova.game;
 
 import ru.nsu.gorlova.cards.Deck;
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.player.Dealer;
-import ru.nsu.gorlova.player.HumanPlayer;
 import ru.nsu.gorlova.player.Player;
 
 /**
- * Игра «Консольный блэкджек».
+ * Один раунд игры в Блэкджек.
  */
-public class Game {
+public class Round {
 
-    /**
-     * Колода карт.
-     */
     private final Deck deck;
-
-    /**
-     * Игрок.
-     */
     private final Player player;
-
-    /**
-     * Дилер.
-     */
     private final Dealer dealer;
 
     /**
-     * Сканер для чтения ввода.
-     */
-    private final Scanner scanner;
-
-    /**
-     * Счёт игры.
-     */
-    private final Score score;
-
-    /**
-     * Создаёт новую игру.
+     * Создаёт раунд.
      *
-     * @param scanner сканер для чтения ввода
+     * @param deck   колода
+     * @param player игрок
+     * @param dealer дилер
      */
-    public Game(Scanner scanner) {
-        this.deck = new Deck();
-        this.player = new HumanPlayer();
-        this.dealer = new Dealer();
-        this.scanner = scanner;
-        this.score = new Score();
+    public Round(Deck deck, Player player, Dealer dealer) {
+        this.deck = deck;
+        this.player = player;
+        this.dealer = dealer;
     }
 
     /**
-     * Запускает игру.
+     * Играет раунд.
+     *
+     * @return результат раунда
      */
-    public void start() {
-        System.out.println("Добро пожаловать в Блэкджек!");
-
-        do {
-            score.nextRound();
-            playRound();
-
-            System.out.print("Хотите сыграть ещё? "
-                    + "Введите 1, если да, и 0, если нет. ");
-        } while (!scanner.nextLine().trim().equals("0"));
-
-        System.out.println("Игра окончена. Счёт "
-                + score.getPlayerWins() + ":" + score.getDealerWins());
-    }
-
-    /**
-     * Играет один раунд.
-     */
-    private void playRound() {
-        System.out.println("Раунд " + score.getRoundNumber());
-
+    public RoundResult play() {
         player.getHand().clear();
         dealer.getHand().clear();
         dealer.hideCard();
@@ -90,9 +48,7 @@ public class Game {
 
         if (player.getHand().isBlackjack()) {
             System.out.println("Блэкджек! Вы выиграли раунд!");
-            score.playerWins();
-            printScore();
-            return;
+            return RoundResult.PLAYER_WIN;
         }
 
         System.out.println("Ваш ход");
@@ -106,9 +62,7 @@ public class Game {
 
             if (player.getHand().isBusted()) {
                 System.out.println("Перебор! Вы проиграли раунд.");
-                score.dealerWins();
-                printScore();
-                return;
+                return RoundResult.DEALER_WIN;
             }
         }
 
@@ -129,37 +83,30 @@ public class Game {
             System.out.println("Карты дилера: " + dealer.getHand());
         }
 
-        determineWinner();
+        return determineWinner();
     }
 
     /**
      * Определяет победителя раунда.
+     *
+     * @return результат
      */
-    private void determineWinner() {
+    private RoundResult determineWinner() {
         int playerScore = player.getHand().getScore();
         int dealerScore = dealer.getHand().getScore();
 
         if (dealer.getHand().isBusted()) {
             System.out.println("У дилера перебор! Вы выиграли раунд!");
-            score.playerWins();
+            return RoundResult.PLAYER_WIN;
         } else if (playerScore > dealerScore) {
             System.out.println("Вы выиграли раунд!");
-            score.playerWins();
+            return RoundResult.PLAYER_WIN;
         } else if (playerScore < dealerScore) {
             System.out.println("Дилер выиграл раунд.");
-            score.dealerWins();
+            return RoundResult.DEALER_WIN;
         } else {
             System.out.println("Ничья!");
+            return RoundResult.DRAW;
         }
-
-        printScore();
-    }
-
-    /**
-     * Печатает текущий счёт.
-     */
-    private void printScore() {
-        System.out.println("Счёт " + score.getPlayerWins() + ":"
-                + score.getDealerWins() + ".");
     }
 }

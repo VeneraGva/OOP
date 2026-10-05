@@ -3,7 +3,6 @@ package ru.nsu.gorlova.cards;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import ru.nsu.gorlova.cards.card.Card;
 import ru.nsu.gorlova.cards.card.Rank;
 import ru.nsu.gorlova.cards.card.Suit;
@@ -76,5 +75,14 @@ public class Deck {
      */
     public boolean isEmpty() {
         return cards.isEmpty();
+    }
+
+    /**
+     * Кладёт карту на верх колоды. Следующий вызов вернёт именно эту карту.
+     *
+     * @param card карта для добавления
+     */
+    public void putOnTop(Card card) {
+        cards.add(card);
     }
 }

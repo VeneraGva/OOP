@@ -5,45 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0461941-2f1a-4893-8a81-e5c556f2e8fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/BinOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/StringParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/Variable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Div.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Mul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/gorlova/expression/binop/Sub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/NumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/StringParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/VariableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/AddTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/DivTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/MulTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/gorlova/expression/binop/SubTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/copy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/link.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/org/example/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/docs/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/docs/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1/main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1/main.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +23,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Task_1_1_3" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -98,7 +70,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "task-1-1-2",
+    "git-widget-placeholder": "task-1-1-3",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/vener/Documents/secondcurs/OOP/Task_1_1_3/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",

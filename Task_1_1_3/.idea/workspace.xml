@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0461941-2f1a-4893-8a81-e5c556f2e8fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Round.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/RoundResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/RoundResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/gorlova/game/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/gorlova/game/RoundTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/gorlova/game/RoundTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a0461941-2f1a-4893-8a81-e5c556f2e8fd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +67,7 @@
     "Gradle.VariableTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "task-1-1-3",
     "kotlin-language-version-configured": "true",

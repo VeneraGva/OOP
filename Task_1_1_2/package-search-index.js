@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.nsu.gorlova"},{"l":"ru.nsu.gorlova.cards"},{"l":"ru.nsu.gorlova.cards.card"},{"l":"ru.nsu.gorlova.player"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.nsu.gorlova"},{"l":"ru.nsu.gorlova.cards"},{"l":"ru.nsu.gorlova.cards.card"},{"l":"ru.nsu.gorlova.game"},{"l":"ru.nsu.gorlova.player"}];updateSearchResults();

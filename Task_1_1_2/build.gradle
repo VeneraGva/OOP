@@ -1,24 +1,13 @@
 plugins {
     id 'java'
-    id 'application'
     id 'jacoco'
 }
 
-group = 'org.example'
+group = 'ru.nsu.gorlova'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21) // укажите вашу версию JDK
-    }
-}
-
-application {
-    mainClass = 'org.example.Main'
 }
 
 dependencies {
@@ -35,35 +24,10 @@ tasks.test {
     testLogging {
         events "passed", "failed", "skipped"
     }
-    finalizedBy jacocoTestReport
 }
 
 jacocoTestReport {
     reports {
         xml.required = true
     }
-    afterEvaluate {
-        classDirectories.setFrom(files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: [
-                    '**/Main.class',
-            ])
-        }))
-    }
-}
-
-javadoc {
-    options {
-        encoding = 'UTF-8'
-        charSet = 'UTF-8'
-        author = true
-        version = true
-        links = ['https://docs.oracle.com/en/java/javase/21/docs/api/']
-    }
-}
-tasks.withType(JavaExec).configureEach {
-    jvmArgs(
-            "-Dfile.encoding=UTF-8",
-            "-Dsun.stdout.encoding=UTF-8",
-            "-Dsun.stderr.encoding=UTF-8"
-    )
 }

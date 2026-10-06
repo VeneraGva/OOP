@@ -3,7 +3,7 @@ plugins {
     id 'jacoco'
 }
 
-group = 'org.example'
+group = 'ru.nsu.gorlova'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -24,7 +24,6 @@ tasks.test {
     testLogging {
         events "passed", "failed", "skipped"
     }
-    finalizedBy jacocoTestReport
 }
 
 jacocoTestReport {

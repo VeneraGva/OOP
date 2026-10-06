@@ -3,6 +3,9 @@ package ru.nsu.gorlova.expression.binop;
 import ru.nsu.gorlova.Expression;
 import ru.nsu.gorlova.expression.BinOperation;
 
+/**
+ * Операция деления.
+ */
 public class Div extends BinOperation {
 
     /**

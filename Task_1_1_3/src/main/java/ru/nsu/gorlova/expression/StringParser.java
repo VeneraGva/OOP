@@ -9,6 +9,12 @@ import java.util.Map;
 public class StringParser {
 
     /**
+     * Создаёт парсер.
+     */
+    public StringParser() {
+    }
+
+    /**
      * Парсит строку присваиваний в словарь значений.
      *
      * @param assignments строка вида "x = 10; y = 13"

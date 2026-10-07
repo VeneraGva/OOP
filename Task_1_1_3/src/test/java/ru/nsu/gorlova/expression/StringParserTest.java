@@ -162,7 +162,7 @@ class StringParserTest {
      */
     @Test
     void testParseNonNumericValue() {
-        assertThrows(NumberFormatException.class,
+        assertThrows(IllegalArgumentException.class,
                 () -> StringParser.parse("x = abc"));
     }
 

@@ -1,6 +1,7 @@
 package ru.nsu.gorlova.expression.binop;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -118,10 +119,7 @@ class DivTest {
     @Test
     void testEvalDivisionByZero() {
         Expression e = new Div(new Number(10), new Number(0));
-        int result = e.eval("");
-        assertEquals(0, result);
-        assertEquals("Ошибка деление на 0. Неправильное деление заменяется на 0.\n",
-                out.toString().replace("\r\n", "\n"));
+        assertThrows(ArithmeticException.class, () -> e.eval(""));
     }
 
     /**

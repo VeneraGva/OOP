@@ -30,8 +30,14 @@ public class StringParser {
         for (String pair : pairs) {
             String[] parts = pair.trim().split("=");
             if (parts.length == 2) {
-                String varName = parts[0].trim();
-                int value = Integer.parseInt(parts[1].trim());
+                String varName = parts[0].trim();int value;
+                try {
+                    value = Integer.parseInt(parts[1].trim());
+                } catch (NumberFormatException e) {
+                    throw new IllegalArgumentException(
+                            "Значение переменной '" + varName
+                                    + "' не является целым числом.", e);
+                }
                 values.put(varName, value);
             }
         }

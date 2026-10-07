@@ -58,8 +58,7 @@ public class Div extends BinOperation {
     public int eval(String term) {
         int rightValue = right.eval(term);
         if (rightValue == 0) {
-            System.out.println("Ошибка деление на 0. Неправильное деление заменяется на 0.");
-            return 0;
+            throw new ArithmeticException("Деление на ноль");
         }
         return left.eval(term) / rightValue;
     }

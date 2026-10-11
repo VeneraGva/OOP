@@ -32,8 +32,15 @@ public class Main {
         System.out.println();
 
         Expression ve = new Add(new Number(3), new Mul(new Number(2), new Variable("x"))); // (3+(2*x))
-        int result = ve.eval("x = 10; y = 13");
-        System.out.println(result);
+
+        try {
+            int result = ve.eval("x = 10; y = 13");
+            System.out.println(result);
+        } catch (ArithmeticException ex) {
+            System.err.println("Ошибка вычисления: " + ex.getMessage());
+        } catch (IllegalArgumentException ex) {
+            System.err.println("Ошибка ввода: " + ex.getMessage());
+        }
 
     }
 }

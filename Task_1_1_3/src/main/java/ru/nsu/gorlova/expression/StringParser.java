@@ -30,7 +30,8 @@ public class StringParser {
         for (String pair : pairs) {
             String[] parts = pair.trim().split("=");
             if (parts.length == 2) {
-                String varName = parts[0].trim();int value;
+                String varName = parts[0].trim();
+                int value;
                 try {
                     value = Integer.parseInt(parts[1].trim());
                 } catch (NumberFormatException e) {

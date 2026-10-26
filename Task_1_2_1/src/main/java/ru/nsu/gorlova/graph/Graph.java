@@ -2,7 +2,6 @@ package ru.nsu.gorlova.graph;
 
 import ru.nsu.gorlova.base_elements.Edge;
 import ru.nsu.gorlova.base_elements.Vertex;
-
 import java.util.Set;
 
 /**
@@ -22,7 +21,7 @@ public interface Graph {
      *
      * @param vertex удаляемая вершина.
      */
-    void deleteVertex(Vertex vertex);
+    void removeVertex(Vertex vertex);
 
     /**
      * Проверяет наличие вершины в графе.
@@ -59,7 +58,7 @@ public interface Graph {
      *
      * @param edge удаляемое ребро.
      */
-    void deleteEdge(Edge edge);
+    void removeEdge(Edge edge);
 
     /**
      * Проверяет наличие ребра в графе.

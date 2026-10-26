@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.gorlova.expression.StringParserTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-09T08:49:44.456Z" hostname="VENERA" time="0.083">
+  <properties/>
+  <testcase name="testParseEmpty()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.004"/>
+  <testcase name="testParseMultipleEquals()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.003"/>
+  <testcase name="testParseNull()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.002"/>
+  <testcase name="testParseWithExtraSpaces()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.002"/>
+  <testcase name="testParseThreeVariables()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.004"/>
+  <testcase name="testParseSpacesOnly()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.002"/>
+  <testcase name="testParseTwoVariables()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.003"/>
+  <testcase name="testParseDuplicateName()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.002"/>
+  <testcase name="testParseNonNumericValue()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.005"/>
+  <testcase name="testParseNegativeValues()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.003"/>
+  <testcase name="testParseLongNames()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.002"/>
+  <testcase name="testParseMixedGarbage()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.001"/>
+  <testcase name="testParseNoEquals()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.001"/>
+  <testcase name="testParseWithoutSpaces()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.004"/>
+  <testcase name="testParseOneVariable()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.003"/>
+  <testcase name="testParseZeroValues()" classname="ru.nsu.gorlova.expression.StringParserTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

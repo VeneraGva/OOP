@@ -1,0 +1,16 @@
+-classpath 'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\build\\classes\\java\\main;C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\build\\resources\\main'
+-d 'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\build\\docs\\javadoc'
+-doctitle 'Task_1_1_3 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'Task_1_1_3 1.0-SNAPSHOT API'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\binop\\Add.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\binop\\Div.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\binop\\Mul.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\binop\\Sub.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\BinOperation.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\Number.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\StringParser.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\expression\\Variable.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\Expression.java'
+'C:\\Users\\vener\\Documents\\secondcurs\\OOP\\Task_1_1_3\\src\\main\\java\\ru\\nsu\\gorlova\\Main.java'

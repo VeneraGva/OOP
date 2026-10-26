@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.gorlova.expression.NumberTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-09T08:49:44.367Z" hostname="VENERA" time="0.079">
+  <properties/>
+  <testcase name="testPrintPositive()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.006"/>
+  <testcase name="testPrintNegative()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testPrintZero()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testEvalIgnoresAssignments()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.001"/>
+  <testcase name="testDerivativePositive()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testPrintLarge()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testDerivativeNegative()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testDerivativeZero()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.005"/>
+  <testcase name="testOriginalUnchangedAfterDerivative()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.009"/>
+  <testcase name="testDerivativeAnyVariable()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.004"/>
+  <testcase name="testEvalZero()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.003"/>
+  <testcase name="testEvalPositive()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <testcase name="testEvalNegative()" classname="ru.nsu.gorlova.expression.NumberTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

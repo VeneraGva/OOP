@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.gorlova.MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-09T08:49:44.121Z" hostname="VENERA" time="0.232">
+  <properties/>
+  <testcase name="testComplexExpressionEval()" classname="ru.nsu.gorlova.MainTest" time="0.062"/>
+  <testcase name="testDerivativeByUnknownVariable()" classname="ru.nsu.gorlova.MainTest" time="0.047"/>
+  <testcase name="testLongVariableNamesDerivative()" classname="ru.nsu.gorlova.MainTest" time="0.009"/>
+  <testcase name="testFullCycle()" classname="ru.nsu.gorlova.MainTest" time="0.002"/>
+  <testcase name="testDerivativeExampleFromTask()" classname="ru.nsu.gorlova.MainTest" time="0.002"/>
+  <testcase name="testOriginalUnchangedAfterAllOperations()" classname="ru.nsu.gorlova.MainTest" time="0.013"/>
+  <testcase name="testComplexExpressionDerivative()" classname="ru.nsu.gorlova.MainTest" time="0.004"/>
+  <testcase name="testComplexExpression()" classname="ru.nsu.gorlova.MainTest" time="0.004"/>
+  <testcase name="testEvalWithMissingVariable()" classname="ru.nsu.gorlova.MainTest" time="0.019"/>
+  <testcase name="testEvalExampleFromTask()" classname="ru.nsu.gorlova.MainTest" time="0.001"/>
+  <testcase name="testLongVariableNames()" classname="ru.nsu.gorlova.MainTest" time="0.004"/>
+  <testcase name="testExampleFromTask()" classname="ru.nsu.gorlova.MainTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

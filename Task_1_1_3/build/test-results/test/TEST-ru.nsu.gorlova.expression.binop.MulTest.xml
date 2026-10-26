@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.gorlova.expression.binop.MulTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-09T08:49:44.851Z" hostname="VENERA" time="0.126">
+  <properties/>
+  <testcase name="testEvalTwoNumbers()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.002"/>
+  <testcase name="testDerivativeTwoVariables()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.004"/>
+  <testcase name="testPrintNested()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.002"/>
+  <testcase name="testEvalWithZero()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.012"/>
+  <testcase name="testEvalNumberAndVariable()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.011"/>
+  <testcase name="testDerivativeVariableAndNumber()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.005"/>
+  <testcase name="testOriginalUnchangedAfterDerivative()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.004"/>
+  <testcase name="testDerivativeNumberAndVariable()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.004"/>
+  <testcase name="testPrintNumberAndVariable()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.003"/>
+  <testcase name="testPrintTwoVariables()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.003"/>
+  <testcase name="testDerivativeTwoNumbers()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.003"/>
+  <testcase name="testEvalTwoVariables()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.004"/>
+  <testcase name="testPrintTwoNumbers()" classname="ru.nsu.gorlova.expression.binop.MulTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

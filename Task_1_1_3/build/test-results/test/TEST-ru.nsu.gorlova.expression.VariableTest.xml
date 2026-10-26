@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.gorlova.expression.VariableTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-09T08:49:44.551Z" hostname="VENERA" time="0.14">
+  <properties/>
+  <testcase name="testEvalNotAssigned()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.003"/>
+  <testcase name="testEvalLongName()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.004"/>
+  <testcase name="testPrintSingleLetter()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.003"/>
+  <testcase name="testEvalAmongOthers()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.003"/>
+  <testcase name="testEvalEmptyString()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.01"/>
+  <testcase name="testEvalAssigned()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.004"/>
+  <testcase name="testPrintLongName()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.006"/>
+  <testcase name="testOriginalUnchangedAfterDerivative()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.006"/>
+  <testcase name="testDerivativeDifferentName()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.011"/>
+  <testcase name="testDerivativeSameName()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.005"/>
+  <testcase name="testDerivativeLongName()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.002"/>
+  <testcase name="testEvalNull()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.002"/>
+  <testcase name="testEvalZero()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.004"/>
+  <testcase name="testDerivativeLongNameDifferent()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.005"/>
+  <testcase name="testEvalNegative()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.003"/>
+  <testcase name="testPrintWithDigits()" classname="ru.nsu.gorlova.expression.VariableTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

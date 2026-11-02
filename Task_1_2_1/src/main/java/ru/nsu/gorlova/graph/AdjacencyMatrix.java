@@ -120,13 +120,11 @@ public class AdjacencyMatrix extends AbstractGraph {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!vertexToIndex.containsKey(from) || !vertexToIndex.containsKey(to)) {
-            throw new IllegalArgumentException("Edge vertex or edge vertexes " +
-                    "is not present in the graph");
+            throw new IllegalArgumentException("Edge vertex or edge vertexes is not present in the graph");
         }
         int indexFrom = vertexToIndex.get(from);
         int indexTo = vertexToIndex.get(to);
-        matrix.get(indexFrom).set(indexTo, matrix.get(indexFrom).get(indexTo) +
-                edge.getMultiplicity());
+        matrix.get(indexFrom).set(indexTo, matrix.get(indexFrom).get(indexTo) + edge.getMultiplicity());
     }
 
     /**

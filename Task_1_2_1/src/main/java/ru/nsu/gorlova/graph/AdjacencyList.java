@@ -92,8 +92,7 @@ public class AdjacencyList extends AbstractGraph {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!adjacencyList.containsKey(from) || !adjacencyList.containsKey(to)) {
-            throw new IllegalArgumentException("One or both edge vertices are " +
-                    "not present in the graph");
+            throw new IllegalArgumentException("One or both edge vertices are not present in the graph");
         }
         Map<Vertex, Integer> neighbors = adjacencyList.get(from);
         int oldMultiplicity = neighbors.getOrDefault(to, 0);

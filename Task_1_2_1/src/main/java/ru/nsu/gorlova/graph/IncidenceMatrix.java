@@ -1,8 +1,12 @@
 package ru.nsu.gorlova.graph;
 
-import ru.nsu.gorlova.base_elements.Edge;
-import ru.nsu.gorlova.base_elements.Vertex;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
 
 /**
  * Матрица инцидентности.
@@ -112,7 +116,8 @@ public class IncidenceMatrix extends AbstractGraph  {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!vertices.contains(from) || !vertices.contains(to)) {
-            throw new IllegalArgumentException("One or both edge vertices are not present in the graph.txt");
+            throw new IllegalArgumentException("One or both edge vertices" +
+                    "are not present in the graph.txt");
         }
         int exist = findEdgeColumn(from, to);
         if (exist >= 0) {
@@ -122,8 +127,7 @@ public class IncidenceMatrix extends AbstractGraph  {
                 int value = matrix.get(row).get(exist);
                 if (value > 0) {
                     matrix.get(row).set(exist, newMultiplicity);
-                }
-                else if (value < 0) {
+                } else if (value < 0) {
                     matrix.get(row).set(exist, -newMultiplicity);
                 }
             }

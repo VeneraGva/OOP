@@ -1,13 +1,16 @@
 package ru.nsu.gorlova.graph;
 
-import ru.nsu.gorlova.base_elements.Edge;
-import ru.nsu.gorlova.base_elements.Vertex;
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
 
 /**
  * Список смежности.
  */
-public class AdjacencyList extends AbstractGraph  {
+public class AdjacencyList extends AbstractGraph {
 
     /**
      * Поле списка смежности.
@@ -89,7 +92,8 @@ public class AdjacencyList extends AbstractGraph  {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!adjacencyList.containsKey(from) || !adjacencyList.containsKey(to)) {
-            throw new IllegalArgumentException("One or both edge vertices are not present in the graph");
+            throw new IllegalArgumentException("One or both edge vertices are " +
+                    "not present in the graph");
         }
         Map<Vertex, Integer> neighbors = adjacencyList.get(from);
         int oldMultiplicity = neighbors.getOrDefault(to, 0);
@@ -116,8 +120,7 @@ public class AdjacencyList extends AbstractGraph  {
         int newMultiplicity = oldMultiplicity - edge.getMultiplicity();
         if (newMultiplicity <= 0) {
             neighbors.remove(to);
-        }
-        else {
+        } else {
             neighbors.put(to, newMultiplicity);
         }
     }

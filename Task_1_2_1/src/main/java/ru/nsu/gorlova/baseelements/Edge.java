@@ -1,4 +1,4 @@
-package ru.nsu.gorlova.base_elements;
+package ru.nsu.gorlova.baseelements;
 
 /**
  * Ориентированное ребро графа.
@@ -16,7 +16,7 @@ public class Edge {
     private final Vertex inVertex;
 
     /**
-     * Поле кратности ребра
+     * Поле кратности ребра.
      */
     private Integer multiplicity;
 
@@ -40,7 +40,8 @@ public class Edge {
      */
     @Override
     public String toString() {
-        return "[ ( " + outVertex.toString() + "; " + inVertex.toString() + "), " + Integer.toString(multiplicity) + " ]";
+        return "[ ( " + outVertex.toString() + "; "
+                + inVertex.toString() + "), " + Integer.toString(multiplicity) + " ]";
     }
 
     /**
@@ -84,6 +85,7 @@ public class Edge {
 
     /**
      * Функция сравнения ребра. Кратность не сравнивается.
+     *
      * @param edge ребро, с которым сравнивается.
      * @return правда, если ребра равны.
      */
@@ -95,7 +97,8 @@ public class Edge {
         if (edge == null || getClass() != edge.getClass()) {
             return false;
         }
-        return outVertex.equals(((Edge) edge).outVertex) && inVertex.equals(((Edge) edge).inVertex);
+        return outVertex.equals(((Edge) edge).outVertex)
+                && inVertex.equals(((Edge) edge).inVertex);
     }
 
     /**

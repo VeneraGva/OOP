@@ -1,8 +1,8 @@
 package ru.nsu.gorlova.graph;
 
-import ru.nsu.gorlova.base_elements.Edge;
-import ru.nsu.gorlova.base_elements.Vertex;
 import java.util.Set;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
 
 /**
  * Интерфейс ориентированного графа.

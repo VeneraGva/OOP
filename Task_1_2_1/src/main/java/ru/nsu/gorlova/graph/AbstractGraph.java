@@ -1,6 +1,6 @@
 package ru.nsu.gorlova.graph;
 
-import java.util.*;
+import java.util.Objects;
 
 /**
  * Абстрактный класс для реализаций графа: общие equals, hashCode, toString.
@@ -15,8 +15,12 @@ public abstract class AbstractGraph implements Graph {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Graph other = (Graph) o;
         return getVertices().equals(other.getVertices()) && getEdges().equals(other.getEdges());
     }

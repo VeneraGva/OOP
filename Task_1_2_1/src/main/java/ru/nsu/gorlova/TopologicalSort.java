@@ -1,8 +1,15 @@
 package ru.nsu.gorlova;
 
-import ru.nsu.gorlova.base_elements.Vertex;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import ru.nsu.gorlova.baseelements.Vertex;
 import ru.nsu.gorlova.graph.Graph;
-import java.util.*;
 
 /**
  * Алгоритмы топологической сортировки ориентированного графа.
@@ -74,12 +81,13 @@ public class TopologicalSort {
      * Рекурсивно обходит вершину.
      *
      * @param graph граф.
-     *  * @param vertex текущая вершина.
-     *  * @param visited множество уже посещённых вершин.
-     *  * @param stack множество вершин на текущем пути.
-     *  * @param result очередь, в начало которой добавляются вершины после обработки.
+     * @param vertex текущая вершина.
+     * @param visited множество уже посещённых вершин.
+     * @param stack множество вершин на текущем пути.
+     * @param result очередь, в начало которой добавляются вершины после обработки.
      */
-    private void dfs(Graph graph, Vertex vertex, Set<Vertex> visited, Set<Vertex> stack, Deque<Vertex> result) {
+    private void dfs(Graph graph, Vertex vertex, Set<Vertex> visited, Set<Vertex> stack,
+                     Deque<Vertex> result) {
         visited.add(vertex);
         stack.add(vertex);
         for (Vertex neighbor : graph.getNeighbors(vertex)) {

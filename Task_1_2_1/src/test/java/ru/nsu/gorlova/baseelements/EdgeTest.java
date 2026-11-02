@@ -1,4 +1,4 @@
-package ru.nsu.gorlova.base_elements;
+package ru.nsu.gorlova.baseelements;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.nsu.gorlova.base_elements.Edge;
-import ru.nsu.gorlova.base_elements.Vertex;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
 import java.util.Set;
 
 class IncidenceMatrixTest {

@@ -1,14 +1,19 @@
 package ru.nsu.gorlova.graph;
 
-import ru.nsu.gorlova.base_elements.Edge;
-import ru.nsu.gorlova.base_elements.Vertex;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
 
 /**
  * Матрица смежности.
  */
-public class AdjacencyMatrix extends AbstractGraph  {
+public class AdjacencyMatrix extends AbstractGraph {
 
     /**
      * Список всех вершин графа (индекс вершины соответствует строке/столбцу матрицы).
@@ -115,11 +120,13 @@ public class AdjacencyMatrix extends AbstractGraph  {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!vertexToIndex.containsKey(from) || !vertexToIndex.containsKey(to)) {
-            throw new IllegalArgumentException("Edge vertex or edge vertexes is not present in the graph.txt");
+            throw new IllegalArgumentException("Edge vertex or edge vertexes " +
+                    "is not present in the graph");
         }
         int indexFrom = vertexToIndex.get(from);
         int indexTo = vertexToIndex.get(to);
-        matrix.get(indexFrom).set(indexTo, matrix.get(indexFrom).get(indexTo) + edge.getMultiplicity());
+        matrix.get(indexFrom).set(indexTo, matrix.get(indexFrom).get(indexTo) +
+                edge.getMultiplicity());
     }
 
     /**
@@ -201,7 +208,8 @@ public class AdjacencyMatrix extends AbstractGraph  {
     @Override
     public Set<Vertex> getNeighbors(Vertex vertex) {
         if (!vertexToIndex.containsKey(vertex)) {
-            throw new IllegalArgumentException("The vertex is not in the graph.txt: " + vertex);
+            throw new IllegalArgumentException("The vertex is not in the graph: "
+                    + vertex);
         }
         int key = vertexToIndex.get(vertex);
         Set<Vertex> result = new HashSet<>();
@@ -224,7 +232,8 @@ public class AdjacencyMatrix extends AbstractGraph  {
     @Override
     public int inDegree(Vertex vertex) {
         if (!vertexToIndex.containsKey(vertex)) {
-            throw new IllegalArgumentException("The vertex is not in the graph.txt: " + vertex);
+            throw new IllegalArgumentException("The vertex is not in the graph: "
+                    + vertex);
         }
         int key = vertexToIndex.get(vertex);
         int sum = 0;

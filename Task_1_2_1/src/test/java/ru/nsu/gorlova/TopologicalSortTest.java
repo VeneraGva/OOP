@@ -1,13 +1,17 @@
 package ru.nsu.gorlova;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import org.junit.jupiter.api.Test;
 import ru.nsu.gorlova.baseelements.Edge;
 import ru.nsu.gorlova.baseelements.Vertex;
-import ru.nsu.gorlova.graph.Graph;
 import ru.nsu.gorlova.graph.AdjacencyList;
-import java.util.*;
+import ru.nsu.gorlova.graph.Graph;
 
 class TopologicalSortTest {
 
@@ -15,17 +19,17 @@ class TopologicalSortTest {
 
     private Graph dag() {
         Graph graph = new AdjacencyList();
-        Vertex a = new Vertex("A");
-        Vertex b = new Vertex("B");
-        Vertex c = new Vertex("C");
-        Vertex d = new Vertex("D");
-        graph.addVertex(a);
-        graph.addVertex(b);
-        graph.addVertex(c);
-        graph.addVertex(d);
-        graph.addEdge(new Edge(a, c, 1));
-        graph.addEdge(new Edge(b, c, 1));
-        graph.addEdge(new Edge(c, d, 1));
+        Vertex aa = new Vertex("A");
+        Vertex bb = new Vertex("B");
+        Vertex cc = new Vertex("C");
+        Vertex dd = new Vertex("D");
+        graph.addVertex(aa);
+        graph.addVertex(bb);
+        graph.addVertex(cc);
+        graph.addVertex(dd);
+        graph.addEdge(new Edge(aa, cc, 1));
+        graph.addEdge(new Edge(bb, cc, 1));
+        graph.addEdge(new Edge(cc, dd, 1));
         return graph;
     }
 

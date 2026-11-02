@@ -11,7 +11,7 @@ import ru.nsu.gorlova.baseelements.Vertex;
 /**
  * Матрица инцидентности.
  */
-public class IncidenceMatrix extends AbstractGraph  {
+public class IncidenceMatrix extends AbstractGraph {
 
     /**
      * Список всех вершин графа (индекс вершины соответствует строке матрицы).
@@ -116,8 +116,8 @@ public class IncidenceMatrix extends AbstractGraph  {
         Vertex from = edge.getOutVertex();
         Vertex to = edge.getInVertex();
         if (!vertices.contains(from) || !vertices.contains(to)) {
-            throw new IllegalArgumentException("One or both edge vertices" +
-                    "are not present in the graph.txt");
+            throw new IllegalArgumentException(
+                    "One or both edge vertices are not present in the graph");
         }
         int exist = findEdgeColumn(from, to);
         if (exist >= 0) {
@@ -225,7 +225,7 @@ public class IncidenceMatrix extends AbstractGraph  {
     public Set<Vertex> getNeighbors(Vertex vertex) {
         int rowIndex = vertices.indexOf(vertex);
         if (rowIndex < 0) {
-            throw new IllegalArgumentException("The vertex is not in the graph.txt: " + vertex);
+            throw new IllegalArgumentException("The vertex is not in the graph: " + vertex);
         }
         Set<Vertex> result = new HashSet<>();
         List<Integer> row = matrix.get(rowIndex);
@@ -248,7 +248,7 @@ public class IncidenceMatrix extends AbstractGraph  {
     public int inDegree(Vertex vertex) {
         int rowIndex = vertices.indexOf(vertex);
         if (rowIndex < 0) {
-            throw new IllegalArgumentException("The vertex is not in the graph.txt: " + vertex);
+            throw new IllegalArgumentException("The vertex is not in the graph: " + vertex);
         }
         int sum = 0;
         for (int column = 0; column < edges.size(); column++) {

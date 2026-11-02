@@ -1,15 +1,18 @@
 package ru.nsu.gorlova;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-import ru.nsu.gorlova.baseelements.Edge;
-import ru.nsu.gorlova.baseelements.Vertex;
-import ru.nsu.gorlova.graph.Graph;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import org.junit.jupiter.api.Test;
+import ru.nsu.gorlova.baseelements.Edge;
+import ru.nsu.gorlova.baseelements.Vertex;
+import ru.nsu.gorlova.graph.Graph;
 
 class FileGraphReaderTest {
 

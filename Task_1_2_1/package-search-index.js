@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.nsu.gorlova"},{"l":"ru.nsu.gorlova.base_elements"},{"l":"ru.nsu.gorlova.graph"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.nsu.gorlova"},{"l":"ru.nsu.gorlova.baseelements"},{"l":"ru.nsu.gorlova.graph"}];updateSearchResults();

@@ -8,14 +8,6 @@ package ru.nsu.gorlova.baseelements;
 public record Vertex(String name) {
 
     /**
-     * Создание вершины графа.
-     *
-     * @param name название вершины графа.
-     */
-    public Vertex {
-    }
-
-    /**
      * Функция, возвращающая название переменной.
      *
      * @return строковое название переменой.

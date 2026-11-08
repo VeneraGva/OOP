@@ -1,6 +1,15 @@
 package ru.nsu.gorlova;
 
+/**
+ * Main.
+ */
 public class Main {
+
+    /**
+     * Пример.
+     *
+     * @param args аргументы командной строки.
+     */
     public static void main(String[] args) {
         HashTable<String, Number> hashTable = new HashTable<>();
         hashTable.put("one", 1);

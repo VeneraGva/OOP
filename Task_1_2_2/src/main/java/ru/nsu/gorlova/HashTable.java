@@ -12,7 +12,7 @@ import java.util.Objects;
  * @param <K> тип ключа.
  * @param <V> тип значения.
  */
-public class HashTable<K, V> implements Iterable<HashTable.Entry<K,V>>{
+public class HashTable<K, V> implements Iterable<HashTable.Entry<K, V>> {
 
     /**
      * Размер хэш таблицы.
@@ -155,7 +155,7 @@ public class HashTable<K, V> implements Iterable<HashTable.Entry<K,V>>{
      * @return хеш код.
      */
     private int hashCode(K key) {
-        if(key == null) {
+        if (key == null) {
             return 0;
         }
         int hashCode = key.hashCode();
@@ -312,7 +312,9 @@ public class HashTable<K, V> implements Iterable<HashTable.Entry<K,V>>{
             return false;
         }
         HashTable<K, V> other = (HashTable<K, V>) object;
-        if (size != other.size) return false;
+        if (size != other.size) {
+            return false;
+        }
         for (Entry<K, V> i : this) {
             if (!other.containsKey(i.getKey())) {
                 return false;
@@ -334,7 +336,9 @@ public class HashTable<K, V> implements Iterable<HashTable.Entry<K,V>>{
         StringBuilder string = new StringBuilder("{");
         boolean first = true;
         for (Entry<K, V> i : this) {
-            if (!first) string.append(", ");
+            if (!first) {
+                string.append(", ");
+            }
             string.append(i.getKey()).append("=").append(i.getValue());
             first = false;
         }

@@ -247,7 +247,7 @@ class HashTableTest {
     }
 
     @Test
-    void iteratorThrowsCMEOnPutDuringIteration() {
+    void iteratorThrowsCmeOnPutDuringIteration() {
         table.put("one", 1);
         Iterator<HashTable.Entry<String, Number>> it = table.iterator();
         it.next();
@@ -256,7 +256,7 @@ class HashTableTest {
     }
 
     @Test
-    void iteratorThrowsCMEOnRemoveDuringIteration() {
+    void iteratorThrowsCmeOnRemoveDuringIteration() {
         table.put("one", 1);
         table.put("two", 2);
         Iterator<HashTable.Entry<String, Number>> it = table.iterator();
@@ -266,7 +266,7 @@ class HashTableTest {
     }
 
     @Test
-    void iteratorDoesNotThrowCMEOnUpdateValue() {
+    void iteratorDoesNotThrowCmeOnUpdateValue() {
         table.put("one", 1);
         Iterator<HashTable.Entry<String, Number>> it = table.iterator();
         it.next();
@@ -310,7 +310,7 @@ class HashTableTest {
     }
 
     @Test
-    void iteratorRemoveDoesNotThrowCME() {
+    void iteratorRemoveDoesNotThrowCme() {
         table.put("a", 1);
         table.put("b", 2);
         Iterator<HashTable.Entry<String, Number>> it = table.iterator();
